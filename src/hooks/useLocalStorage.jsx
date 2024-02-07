@@ -26,5 +26,5 @@ function useLocalStorage(key, initialValue) {
         localStorage.setItem(key, JSON.stringify(value));
     }, [key, value]);
 
-    return /** @type {[typeof value, typeof setValue]} */ [value, setValue]
+    return /** @type {[typeof value, typeof setValue]} */ ([value, setValue])
 }
